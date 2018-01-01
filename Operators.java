@@ -38,121 +38,44 @@ Calculations:
 We round  to the nearest dollar (integer) and then print our result:
 
 The total meal cost is 15 dollars.
-Submissions:207533
-Max Score:30
-Difficulty: Easy
-Rate This Challenge:
 
-More
-Current Buffer (saved locally, editable)      
-Java 8
 
- 
-1
 import java.util.*;
-2
 import java.math.*;
-3
-​
-4
+
 public class Arithmetic {
-5
-​
-6
+
     int tipPercent;
-7
     int taxPercent;
-8
     double mealCost;
-9
     double total;
-10
     double tip;
-11
     double tax;
-12
-​
-13
-   
-14
-​
-15
-    //public double tip() {
-16
-    //    return mealCost * (tipPercent/100);
-17
-    //}
-18
-​
-19
-    //public double tax() {
-20
-    //    return mealCost * (taxPercent/100);
-21
-    //}
-22
-​
-23
-    //public double void total() {
-24
-    //    return mealCost + tip + tax;
-25
-   // }
-26
-​
-27
+
     public static void main(String[] args) {
-28
         Scanner scan = new Scanner(System.in);
-29
         double mealCost = scan.nextDouble(); // original meal price
-30
         int tipPercent = scan.nextInt(); // tip percentage
-31
         int taxPercent = scan.nextInt(); // tax percentage
-32
         scan.close();
-33
-​
-34
+
         public Arithmetic() {
-35
         this.tip = mealCost * (tipPercent/100);
-36
         this.tax = mealCost * (taxPercent/100);
-37
         //total = mealCost + tip + tax;
-38
     }
-39
         public double total() {
-40
             return mealCost + tip + tax;
-41
         }
-42
         // Write your calculation code here.
-43
         //public double void total() {
-44
        // return mealCost + tip + tax;
-45
     //}
-46
     }
-47
-​
-48
+
          // cast the result of the rounding operation to an int and save it as totalCost
-49
     int totalCost = (int) Math.round(total);
-50
-​
-51
+
     // Print your result
-52
         System.out.printf("The total meal cost is &s  dollars", totalCost);
-53
 }
-54
-​
